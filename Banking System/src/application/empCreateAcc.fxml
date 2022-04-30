@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmpCreateAccController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Create New Account" />
+      <MenuButton layoutX="117.0" layoutY="63.0" mnemonicParsing="false" text="Account Type">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Savings Account" />
+          <MenuItem mnemonicParsing="false" text="Student Account" />
+        </items>
+      </MenuButton>
+      <Label layoutX="82.0" layoutY="127.0" text="Label" />
+      <Label layoutX="82.0" layoutY="168.0" text="Label" />
+      <Label layoutX="82.0" layoutY="200.0" text="Label" />
+      <Label layoutX="82.0" layoutY="230.0" text="Label" />
+      <TextField layoutX="185.0" layoutY="123.0" />
+      <TextField layoutX="170.0" layoutY="239.0" />
+      <TextField layoutX="170.0" layoutY="205.0" />
+      <TextField layoutX="176.0" layoutY="173.0" />
+      <Button layoutX="43.0" layoutY="350.0" mnemonicParsing="false" onAction="#empHomePage" text="HOME" />
+      <Button layoutX="519.0" layoutY="350.0" mnemonicParsing="false" text="EXIT" />
+   </children>
+</AnchorPane>
