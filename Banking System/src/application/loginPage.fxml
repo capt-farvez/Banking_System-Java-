@@ -29,5 +29,6 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
+      <Button layoutX="254.0" layoutY="319.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
    </children>
 </AnchorPane>

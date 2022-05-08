@@ -8,11 +8,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.userHomeController">
    <children>
-      <Button layoutX="125.0" layoutY="138.0" mnemonicParsing="false" text="View Account Information" />
-      <Button layoutX="300.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="View Transaction History" />
-      <Button layoutX="194.0" layoutY="283.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="View My All Account" />
+      <Button layoutX="125.0" layoutY="138.0" mnemonicParsing="false" onAction="#viewAccountsInfo" text="View Account Information" />
+      <Button layoutX="300.0" layoutY="138.0" mnemonicParsing="false" onAction="#viewTransactionHistory" prefHeight="25.0" prefWidth="154.0" text="View Transaction History" />
+      <Button layoutX="194.0" layoutY="283.0" mnemonicParsing="false" onAction="#viewAllAccounts" prefHeight="25.0" prefWidth="154.0" text="View My All Account" />
       <Button layoutX="62.0" layoutY="348.0" mnemonicParsing="false" onAction="#backToLoginPage" text="Login Page" />
-      <Button layoutX="476.0" layoutY="348.0" mnemonicParsing="false" text="Exit" />
+      <Button layoutX="476.0" layoutY="348.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
       <Label layoutX="14.0" layoutY="14.0" text="You are logged as Account Holder" />
       <TextField layoutX="202.0" layoutY="102.0" />
       <Label layoutX="94.0" layoutY="225.0" text="* To view your all Accounts , Please Enter your NID number." textFill="#b52f2f">

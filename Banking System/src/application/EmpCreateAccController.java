@@ -21,5 +21,8 @@ public class EmpCreateAccController {
 			
 		}
 	}
+	public void exit(ActionEvent e) {
+		System.exit(0);
+	}
 
 }

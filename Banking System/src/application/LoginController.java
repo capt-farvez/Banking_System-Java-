@@ -38,6 +38,10 @@ public class LoginController {
 			}
 		
 	}
+	
+	public void exit(ActionEvent e) {
+		System.exit(0);
+	}
 
 
 }

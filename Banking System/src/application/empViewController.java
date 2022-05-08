@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class EmpDepWithTransController {
+public class empViewController {
 	public void empHomePage(ActionEvent e) {
 		try {
 		Stage primaryStage = new Stage();

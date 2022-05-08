@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class EmpDepWithTransController {
+public class ViewAccInfoController {
 	public void empHomePage(ActionEvent e) {
 		try {
 		Stage primaryStage = new Stage();
@@ -21,6 +21,7 @@ public class EmpDepWithTransController {
 			
 		}
 	}
+	
 	public void exit(ActionEvent e) {
 		System.exit(0);
 	}
