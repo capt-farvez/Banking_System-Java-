@@ -1,20 +1,26 @@
 package application;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class userHomeController {
+	@FXML
+	public TextField accNum;
+	@FXML
+	public TextField nid;
 	public void backToLoginPage(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
+		
 		AnchorPane root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 		
 	}
 		catch(Exception we) {
@@ -28,12 +34,12 @@ public class userHomeController {
 	
 	public void viewAllAccounts(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
+		
 		AnchorPane root = FXMLLoader.load(getClass().getResource("empViewAllAcc.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 		
 	}
 		catch(Exception we) {
@@ -43,12 +49,12 @@ public class userHomeController {
 	
 	public void viewAccountsInfo(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
-		AnchorPane root = FXMLLoader.load(getClass().getResource("ViewAccInfo.fxml"));
+		
+		AnchorPane root = FXMLLoader.load(getClass().getResource("userViewAccInfo.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 		
 	}
 		catch(Exception we) {
@@ -58,12 +64,12 @@ public class userHomeController {
 	
 	public void viewTransactionHistory(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
-		AnchorPane root = FXMLLoader.load(getClass().getResource("viewAccTransaction.fxml"));
+	
+		AnchorPane root = FXMLLoader.load(getClass().getResource("userViewAccTransaction.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 		
 	}
 		catch(Exception we) {
@@ -71,6 +77,6 @@ public class userHomeController {
 		}
 	}
 	
-	
+	 
 
 }

@@ -9,12 +9,12 @@ import javafx.stage.Stage;
 public class EmpHomeController {
 	public void deposit(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
+		
 		AnchorPane root = FXMLLoader.load(getClass().getResource("empDepWithTrans.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 		
 	}
 		catch(Exception we) {
@@ -24,12 +24,12 @@ public class EmpHomeController {
 	
 	public void createAcc(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
+		
 		AnchorPane root = FXMLLoader.load(getClass().getResource("empCreateAcc.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 		
 	}
 		catch(Exception we) {
@@ -39,12 +39,12 @@ public class EmpHomeController {
 	
 	public void view(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
+		
 		AnchorPane root = FXMLLoader.load(getClass().getResource("empView.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 		
 	}
 		catch(Exception we) {
@@ -54,18 +54,22 @@ public class EmpHomeController {
 	
 	public void backToLoginPage(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
+		
 		AnchorPane root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 		
 	}
 		catch(Exception we) {
 			
 		}
 	}
+	public void exit(ActionEvent e) {
+		System.exit(0);
+	}
+
 
 
 }

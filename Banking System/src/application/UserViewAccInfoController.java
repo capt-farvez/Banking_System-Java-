@@ -9,13 +9,12 @@ import javafx.stage.Stage;
 public class UserViewAccInfoController {
 	public void UserHomePage(ActionEvent e) {
 		try {
-		Stage primaryStage = new Stage();
+		
 		AnchorPane root = FXMLLoader.load(getClass().getResource("userHome.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.show();
-		
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
 	}
 		catch(Exception we) {
 			
