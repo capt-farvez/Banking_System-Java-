@@ -1,37 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmpCreateAccController">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" text="Create New Account" />
-      <MenuButton layoutX="117.0" layoutY="63.0" mnemonicParsing="false" text="Account Type">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Savings Account" />
-          <MenuItem mnemonicParsing="false" text="Student Account" />
-        </items>
-      </MenuButton>
-      <Label layoutX="78.0" layoutY="139.0" text="Name" />
-      <Label layoutX="76.0" layoutY="197.0" text="Current Balance" />
-      <Label layoutX="77.0" layoutY="167.0" text="Max withdraw Limit" />
-      <Label layoutX="78.0" layoutY="230.0" text="Student ID" />
-      <TextField layoutX="193.0" layoutY="132.0" />
-      <TextField layoutX="193.0" layoutY="196.0" />
-      <TextField layoutX="193.0" layoutY="164.0" />
-      <Button layoutX="43.0" layoutY="350.0" mnemonicParsing="false" onAction="#empHomePage" text="HOME" />
-      <Button layoutX="519.0" layoutY="350.0" mnemonicParsing="false" text="EXIT" />
-      <TextField layoutX="193.0" layoutY="258.0" />
-      <TextField layoutX="193.0" layoutY="289.0" />
-      <TextField layoutX="193.0" layoutY="226.0" />
-      <Label layoutX="78.0" layoutY="263.0" text="Savings Account" />
-      <Label layoutX="80.0" layoutY="293.0" text="Current Account" />
-      <Label layoutX="361.0" layoutY="230.0" text="Label" />
-      <Label layoutX="361.0" layoutY="254.0" text="Label" />
-      <Label layoutX="361.0" layoutY="285.0" text="Label" />
+      <Label layoutX="103.0" layoutY="101.0" text="Account Name">
+         <font>
+            <Font name="Sylfaen" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTf" layoutX="241.0" layoutY="97.0" />
+      <Label fx:id="insName" layoutX="104.0" layoutY="238.0" text="Institution Name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="stId" layoutX="104.0" layoutY="198.0" prefHeight="27.0" prefWidth="134.0" text="Student ID">
+         <font>
+            <Font name="Sylfaen" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="171.0" text="Current Balance">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="maxWith" layoutX="53.0" layoutY="203.0" text="Maximum Withdrow Limit">
+         <font>
+            <Font name="Sylfaen" size="14.0" />
+         </font></Label>
+      <Text layoutX="157.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Type">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font></Text>
+      <ComboBox fx:id="comb" layoutX="255.0" layoutY="18.0" onAction="#combAction" prefWidth="150.0" />
+      <TextField fx:id="nidTf" layoutX="241.0" layoutY="134.0" />
+      <TextField fx:id="balanceTf" layoutX="241.0" layoutY="168.0" />
+      <TextField fx:id="tradeLicensetf" layoutX="241.0" layoutY="199.0" />
+      <TextField fx:id="instNameTf" layoutX="241.0" layoutY="233.0" />
+      <Button layoutX="251.0" layoutY="323.0" mnemonicParsing="false" onAction="#createAcc" text="Create Account" />
+      <Button layoutX="520.0" layoutY="360.0" mnemonicParsing="false" onAction="#exit" text="Exit" textFill="#322d2d">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="104.0" layoutY="139.0" text="NID Number">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="trade" layoutX="109.0" layoutY="204.0" text="Trade Liscence">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="29.0" layoutY="361.0" mnemonicParsing="false" onAction="#empHomePage" text="Home" textFill="#433f3f">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="info" layoutX="246.0" layoutY="278.0" prefHeight="34.0" prefWidth="134.0" />
+      <Label layoutX="105.0" layoutY="287.0" text="New Account Number :" textFill="#7c1818">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

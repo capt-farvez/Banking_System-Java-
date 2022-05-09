@@ -18,20 +18,20 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="216.0" layoutY="95.0" />
+      <TextField fx:id="WDAmount" layoutX="216.0" layoutY="95.0" />
       <Button layoutX="204.0" layoutY="130.0" mnemonicParsing="false" text="WITHDRAW" />
       <Button layoutX="316.0" layoutY="130.0" mnemonicParsing="false" text="DEPOSIT" />
-      <TextField layoutX="216.0" layoutY="219.0" />
-      <TextField layoutX="216.0" layoutY="249.0" />
+      <TextField fx:id="fromAcc" layoutX="216.0" layoutY="219.0" />
+      <TextField fx:id="toAcc" layoutX="216.0" layoutY="249.0" />
       <Button layoutX="264.0" layoutY="329.0" mnemonicParsing="false" text="CONFIRM" />
       <Label layoutX="138.0" layoutY="99.0" text="AMOUNT" />
       <Label layoutX="107.0" layoutY="253.0" text="TO ACCOUNT" />
       <Label layoutX="106.0" layoutY="287.0" text="AMOUNT" />
       <Button layoutX="27.0" layoutY="361.0" mnemonicParsing="false" onAction="#empHomePage" text="HOME" />
-      <Button layoutX="510.0" layoutY="361.0" mnemonicParsing="false" text="EXIT" />
-      <TextField layoutX="216.0" layoutY="283.0" />
+      <Button layoutX="510.0" layoutY="361.0" mnemonicParsing="false" onAction="#exit" text="EXIT" />
+      <TextField fx:id="transAmmount" layoutX="216.0" layoutY="283.0" />
       <Label layoutX="107.0" layoutY="223.0" text="FROM ACCOUNT" />
       <Label layoutX="136.0" layoutY="67.0" text="ACC Number" />
-      <TextField layoutX="216.0" layoutY="63.0" />
+      <TextField fx:id="accNum" layoutX="216.0" layoutY="63.0" />
    </children>
 </AnchorPane>

@@ -14,6 +14,6 @@
       <Button layoutX="314.0" layoutY="176.0" mnemonicParsing="false" onAction="#view" text="View Transaction Information" />
       <Button layoutX="314.0" layoutY="225.0" mnemonicParsing="false" onAction="#view" prefHeight="25.0" prefWidth="171.0" text="View All Account" />
       <Button layoutX="48.0" layoutY="347.0" mnemonicParsing="false" onAction="#backToLoginPage" text="Login Page" />
-      <Button layoutX="496.0" layoutY="347.0" mnemonicParsing="false" text="Exit " />
+      <Button layoutX="496.0" layoutY="347.0" mnemonicParsing="false" onAction="#exit" text="Exit " />
    </children>
 </AnchorPane>

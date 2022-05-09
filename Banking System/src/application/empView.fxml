@@ -12,10 +12,10 @@
       <Button layoutX="300.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="View Transaction History" />
       <Button layoutX="194.0" layoutY="283.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="View All Accounts" />
       <Button layoutX="62.0" layoutY="348.0" mnemonicParsing="false" onAction="#empHomePage" text="Home" />
-      <Button layoutX="476.0" layoutY="348.0" mnemonicParsing="false" text="Exit" />
+      <Button layoutX="476.0" layoutY="348.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
       <Label layoutX="14.0" layoutY="14.0" text="You are logged as Employee" />
-      <TextField layoutX="202.0" layoutY="102.0" />
-      <Label layoutX="94.0" layoutY="225.0" text="* To view your all Accounts , Please Enter Accounts Holder number." textFill="#b52f2f">
+      <TextField fx:id="accNum" layoutX="202.0" layoutY="102.0" />
+      <Label layoutX="94.0" layoutY="225.0" text="* To view  all Accounts , Please Enter Accounts Holder  NID number." textFill="#b52f2f">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -27,6 +27,6 @@
          </font>
       </Label>
       <Label layoutX="108.0" layoutY="255.0" text="NID Number " />
-      <TextField layoutX="196.0" layoutY="251.0" />
+      <TextField fx:id="nid" layoutX="196.0" layoutY="251.0" />
    </children>
 </AnchorPane>
