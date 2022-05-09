@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx"/>
+	<classpathentry kind="lib" path="C:/Users/ANWAR HUSSAIN PARVAI/Documents/GitHub/Banking_System-Java-/BankingLibrary.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
