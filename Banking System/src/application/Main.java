@@ -1,5 +1,5 @@
 package application;
-
+import banking.Bank;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -9,9 +9,12 @@ import javafx.scene.layout.BorderPane;
 
 
 public class Main extends Application {
+	public static Bank bank=new Bank("ABCD Bank");
+	public static Stage primaryStage=null;
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage stage) {
 		try {
+			primaryStage = stage;
 			AnchorPane root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
 			//BorderPane root = new BorderPane();
 			Scene scene = new Scene(root,600,400);
