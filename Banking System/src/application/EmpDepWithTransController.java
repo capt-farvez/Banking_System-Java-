@@ -1,24 +1,27 @@
 package application;
 
+import banking.InSufficientBalanceException;
+import banking.InvalidAccountException;
+import banking.MaxWithdawException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextInputControl;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
 public class EmpDepWithTransController {
 	@FXML
-	public TextField accNum;
+	public TextField accNumTf;
 	@FXML
-	public TextField WDAmount;
+	public TextField WDAmountTf;
 	@FXML
-	public TextField fromAcc;
+	public TextField fromAccTf;
 	@FXML
-	public TextField toAcc;
+	public TextField toAccTf;
 	@FXML
-	public TextField transAmmount;
+	public TextField transAmmountTf;
 	
 	public void empHomePage(ActionEvent e) {
 		try {
@@ -37,16 +40,46 @@ public class EmpDepWithTransController {
 	public void exit(ActionEvent e) {
 		System.exit(0);
 	}
-	public void deposit(ActionEvent e) {
-		
+	public void deposit(ActionEvent event) {
+		String accNum=accNumTf.getText();
+		double amount=Double.parseDouble(WDAmountTf.getText());
+		try {
+			Main.bank.deposit(accNum, amount);
+		}
+		catch (InvalidAccountException e) {
+			e.printStackTrace();
+		} 
+	//		catch (InSufficientBalanceException e) {
+//			e.printStackTrace();
+//		} catch (MaxWithdawException e) {
+//			e.printStackTrace();
+//		}
 	}
-	public void withdraw(ActionEvent e) {
-		
+	public void withdraw(ActionEvent event) {
+		String accNum=accNumTf.getText();
+		double amount=Double.parseDouble(WDAmountTf.getText());
+		try {
+			Main.bank.withdraw(accNum, amount);
+		}
+		catch (InvalidAccountException e) {
+			e.printStackTrace();
+		} catch (InSufficientBalanceException e) {
+			e.printStackTrace();
+		} catch (MaxWithdawException e) {
+			e.printStackTrace();
+		}
 	}
-	public void transfer(ActionEvent e) {
-	
+	public void transfer(ActionEvent event) {
+		String fromAcc=fromAccTf.getText();
+		double balance=Double.parseDouble(transAmmountTf.getText());
+		try {
+			Main.bank.withdraw(fromAcc, balance);
+		} catch (InvalidAccountException e) {
+			e.printStackTrace();
+		} catch (InSufficientBalanceException e) {
+			e.printStackTrace();
+		} catch (MaxWithdawException e) {
+			e.printStackTrace();
+		}
 }
-
-
-
 }
