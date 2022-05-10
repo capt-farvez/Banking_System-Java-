@@ -2,31 +2,39 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.empViewController">
    <children>
-      <Button layoutX="125.0" layoutY="138.0" mnemonicParsing="false" text="View Account Information" />
-      <Button layoutX="300.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="View Transaction History" />
+      <Button layoutX="117.0" layoutY="126.0" mnemonicParsing="false" onAction="#accInfo" text="View Account Information" />
+      <Button layoutX="284.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="View Transaction History" />
       <Button layoutX="194.0" layoutY="283.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="View All Accounts" />
       <Button layoutX="62.0" layoutY="348.0" mnemonicParsing="false" onAction="#empHomePage" text="Home" />
       <Button layoutX="476.0" layoutY="348.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
-      <Label layoutX="14.0" layoutY="14.0" text="You are logged as Employee" />
-      <TextField fx:id="accNum" layoutX="202.0" layoutY="102.0" />
-      <Label layoutX="94.0" layoutY="225.0" text="* To view  all Accounts , Please Enter Accounts Holder  NID number." textFill="#b52f2f">
+      <Label layoutX="14.0" layoutY="14.0" text="You are logged as Employee" textFill="#972121">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="accNum" layoutX="226.0" layoutY="90.0" />
+      <Label layoutX="94.0" layoutY="225.0" text="View  all Accounts ." textFill="#362eb2">
+         <font>
+            <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="90.0" layoutY="106.0" text="Account Number " />
-      <Label layoutX="16.0" layoutY="64.0" text="* To view Account Information &amp; Transaction History, Please Enter Account Holder Account number." textFill="#b52f2f">
+      <Label layoutX="118.0" layoutY="94.0" text="Account Number " />
+      <Label layoutX="87.0" layoutY="52.0" text="View Account Information &amp; Transaction History." textFill="#332eb2">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </Label>
       <Label layoutX="108.0" layoutY="255.0" text="NID Number " />
       <TextField fx:id="nid" layoutX="196.0" layoutY="251.0" />
+      <Separator layoutX="26.0" layoutY="224.0" prefHeight="3.0" prefWidth="538.0" />
+      <Label fx:id="details" layoutX="69.0" layoutY="168.0" prefHeight="17.0" prefWidth="509.0" />
+      <Label layoutX="26.0" layoutY="168.0" text="Details" />
+      <Label layoutX="24.0" layoutY="200.0" text="Type:  Account Name :  ID :  Account NO: Balance :  Minimum Withdraw Liim : Maximum Withdraw  LImit" />
    </children>
 </AnchorPane>
