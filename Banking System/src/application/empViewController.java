@@ -41,7 +41,9 @@ public class empViewController {
 		String num=accNum.getText();
 		try {
 			BankAccount acc=Main.bank.findAccount(num);
-			details.setText(acc.toString());	}
+			details.setText(acc.toString());	
+			Main.bank.saveData();
+			}
 		catch(Exception exp) {
 				exp.printStackTrace();
 			}

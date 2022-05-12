@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class ViewAllAccController {
+public class EmpViewAccTransController {
 	public void empHomePage(ActionEvent e) {
 		try {
 		
@@ -24,4 +24,5 @@ public class ViewAllAccController {
 	public void exit(ActionEvent e) {
 		System.exit(0);
 	}
+
 }

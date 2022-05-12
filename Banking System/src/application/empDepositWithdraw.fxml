@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmpDepositWithdrawController">
+   <children>
+      <Label layoutX="220.0" layoutY="76.0" text="DEPOSIT / WITHDRAW" textFill="#571414">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="WDAmount" layoutX="216.0" layoutY="150.0" />
+      <Button layoutX="190.0" layoutY="200.0" mnemonicParsing="false" text="WITHDRAW" />
+      <Button layoutX="318.0" layoutY="200.0" mnemonicParsing="false" text="DEPOSIT" />
+      <Label layoutX="136.0" layoutY="154.0" text="AMOUNT" />
+      <Label layoutX="136.0" layoutY="270.0" text="Status">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button layoutX="27.0" layoutY="361.0" mnemonicParsing="false" onAction="#empHomePage" text="HOME" />
+      <Button layoutX="510.0" layoutY="361.0" mnemonicParsing="false" onAction="#exit" text="EXIT" />
+      <Label layoutX="136.0" layoutY="120.0" text="ACC Number" />
+      <TextField fx:id="accNum" layoutX="216.0" layoutY="116.0" />
+      <Label layoutX="192.0" layoutY="270.0" prefHeight="17.0" prefWidth="315.0" />
+   </children>
+</AnchorPane>

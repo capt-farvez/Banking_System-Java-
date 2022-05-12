@@ -2,31 +2,26 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.userHomeController">
    <children>
-      <Button layoutX="125.0" layoutY="138.0" mnemonicParsing="false" onAction="#viewAccountsInfo" text="View Account Information" />
-      <Button layoutX="300.0" layoutY="138.0" mnemonicParsing="false" onAction="#viewTransactionHistory" prefHeight="25.0" prefWidth="154.0" text="View Transaction History" />
-      <Button layoutX="194.0" layoutY="283.0" mnemonicParsing="false" onAction="#viewAllAccounts" prefHeight="25.0" prefWidth="154.0" text="View My All Account" />
+      <Button layoutX="102.0" layoutY="113.0" mnemonicParsing="false" onAction="#viewAccountsInfo" text="View Account Information" />
+      <Button layoutX="300.0" layoutY="113.0" mnemonicParsing="false" onAction="#viewTransactionHistory" prefHeight="25.0" prefWidth="154.0" text="View Transaction History" />
+      <Button layoutX="197.0" layoutY="258.0" mnemonicParsing="false" onAction="#viewAllAccounts" prefHeight="25.0" prefWidth="154.0" text="View My All Account" />
       <Button layoutX="62.0" layoutY="348.0" mnemonicParsing="false" onAction="#backToLoginPage" text="Login Page" />
       <Button layoutX="476.0" layoutY="348.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
       <Label layoutX="14.0" layoutY="14.0" text="You are logged as Account Holder" />
-      <TextField fx:id="accNum" layoutX="202.0" layoutY="102.0" />
-      <Label layoutX="94.0" layoutY="225.0" text="* To view your all Accounts , Please Enter your NID number." textFill="#b52f2f">
+      <Label layoutX="94.0" layoutY="225.0" text="* To view your all Accounts for a Specific ID/NID/Trade Licence." textFill="#b52f2f">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="90.0" layoutY="106.0" text="Account Number " />
-      <Label layoutX="47.0" layoutY="62.0" text="* To view Account Information &amp; Transaction History, Please Enter your Account number." textFill="#b52f2f">
+      <Label layoutX="101.0" layoutY="75.0" text="* To view your specific Account Information &amp; Transaction History." textFill="#b52f2f">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="108.0" layoutY="255.0" text="NID Number " />
-      <TextField fx:id="nid" layoutX="196.0" layoutY="251.0" />
    </children>
 </AnchorPane>

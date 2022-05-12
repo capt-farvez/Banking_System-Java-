@@ -10,7 +10,7 @@ public class EmpHomeController {
 	public void deposit(ActionEvent e) {
 		try {
 		
-		AnchorPane root = FXMLLoader.load(getClass().getResource("empDepWithTrans.fxml"));
+		AnchorPane root = FXMLLoader.load(getClass().getResource("empDepositWithdraw.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Main.primaryStage.setScene(scene);
@@ -21,6 +21,22 @@ public class EmpHomeController {
 			
 		}
 	}
+	
+	public void transfer(ActionEvent e) {
+		try {
+		
+		AnchorPane root = FXMLLoader.load(getClass().getResource("empTransfer.fxml"));
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
+		
+	}
+		catch(Exception we) {
+			
+		}
+	}
+	
 	
 	public void createAcc(ActionEvent e) {
 		try {
