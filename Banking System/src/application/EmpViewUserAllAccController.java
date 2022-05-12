@@ -10,13 +10,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 
-public class UserViewAllAccController {
-	public void UserHomePage(ActionEvent e) {
+public class EmpViewUserAllAccController {
+	public void EmpHomePage(ActionEvent e) {
 		try {
 		
-		AnchorPane root = FXMLLoader.load(getClass().getResource("userHome.fxml"));
+		AnchorPane root = FXMLLoader.load(getClass().getResource("empHome.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Main.primaryStage.setScene(scene);
@@ -43,6 +42,5 @@ public class UserViewAllAccController {
 				for(int i=0; i<account.size(); i++)
 					lv.getItems().add(account.get(i).toString());
 		}
-	
 
 }

@@ -16,7 +16,7 @@ public class userHomeController {
 	public void backToLoginPage(ActionEvent e) {
 		try {
 		
-		AnchorPane root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+		AnchorPane root = FXMLLoader.load(getClass().getResource("loginController.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Main.primaryStage.setScene(scene);
@@ -35,7 +35,7 @@ public class userHomeController {
 	public void viewAllAccounts(ActionEvent e) {
 		try {
 		
-		AnchorPane root = FXMLLoader.load(getClass().getResource("empViewAllAcc.fxml"));
+		AnchorPane root = FXMLLoader.load(getClass().getResource("userViewAllAcc.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Main.primaryStage.setScene(scene);

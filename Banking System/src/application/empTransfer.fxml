@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmpTransferController">
    <children>
-      <Button layoutX="309.0" layoutY="222.0" mnemonicParsing="false" text="Confirm" />
+      <Button layoutX="309.0" layoutY="222.0" mnemonicParsing="false" onAction="#transfer" text="Confirm" />
       <Label layoutX="272.0" layoutY="42.0" text="Transfer">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="18.0" />
@@ -22,11 +22,11 @@
          </font>
       </Label>
       <Label layoutX="117.0" layoutY="178.0" text="Transfer Amount" />
-      <Button layoutX="53.0" layoutY="339.0" mnemonicParsing="false" text="Home" />
-      <Button layoutX="497.0" layoutY="339.0" mnemonicParsing="false" text="Exit" />
-      <TextField layoutX="272.0" layoutY="107.0" />
-      <TextField layoutX="272.0" layoutY="141.0" />
-      <TextField layoutX="272.0" layoutY="174.0" />
-      <Label layoutX="169.0" layoutY="287.0" prefHeight="17.0" prefWidth="369.0" />
+      <Button layoutX="53.0" layoutY="339.0" mnemonicParsing="false" onAction="#empHomePage" text="Home" />
+      <Button layoutX="497.0" layoutY="339.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <TextField fx:id="sendertf" layoutX="272.0" layoutY="107.0" />
+      <TextField fx:id="receivertf" layoutX="272.0" layoutY="141.0" />
+      <TextField fx:id="amounttf" layoutX="272.0" layoutY="174.0" />
+      <Label fx:id="status" layoutX="169.0" layoutY="287.0" prefHeight="17.0" prefWidth="369.0" />
    </children>
 </AnchorPane>

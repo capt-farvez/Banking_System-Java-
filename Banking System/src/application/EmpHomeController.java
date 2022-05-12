@@ -7,7 +7,22 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class EmpHomeController {
-	public void deposit(ActionEvent e) {
+	public void createAcc(ActionEvent e) {
+		try {
+		
+		AnchorPane root = FXMLLoader.load(getClass().getResource("empCreateAcc.fxml"));
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
+		
+	}
+		catch(Exception we) {
+			
+		}
+	}
+	
+	public void depositWithdraw(ActionEvent e) {
 		try {
 		
 		AnchorPane root = FXMLLoader.load(getClass().getResource("empDepositWithdraw.fxml"));
@@ -37,11 +52,10 @@ public class EmpHomeController {
 		}
 	}
 	
-	
-	public void createAcc(ActionEvent e) {
+	public void viewAccountInfo(ActionEvent e) {
 		try {
 		
-		AnchorPane root = FXMLLoader.load(getClass().getResource("empCreateAcc.fxml"));
+		AnchorPane root = FXMLLoader.load(getClass().getResource("empViewAccInfo.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Main.primaryStage.setScene(scene);
@@ -53,10 +67,41 @@ public class EmpHomeController {
 		}
 	}
 	
-	public void view(ActionEvent e) {
+	public void viewUserAllBankAccount(ActionEvent e) {
 		try {
 		
-		AnchorPane root = FXMLLoader.load(getClass().getResource("empView.fxml"));
+		AnchorPane root = FXMLLoader.load(getClass().getResource("empViewUserAllAccounts.fxml"));
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
+		
+	}
+		catch(Exception we) {
+			
+		}
+	}
+	
+	public void viewTransaction(ActionEvent e) {
+		try {
+		
+		AnchorPane root = FXMLLoader.load(getClass().getResource("empViewAccTransaction.fxml"));
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
+		
+	}
+		catch(Exception we) {
+			
+		}
+	}
+	
+	
+	public void viewBankAllAccount(ActionEvent e) {
+		try {
+		
+		AnchorPane root = FXMLLoader.load(getClass().getResource("empViewAllAcc.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Main.primaryStage.setScene(scene);
@@ -71,7 +116,7 @@ public class EmpHomeController {
 	public void backToLoginPage(ActionEvent e) {
 		try {
 		
-		AnchorPane root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+		AnchorPane root = FXMLLoader.load(getClass().getResource("loginController.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Main.primaryStage.setScene(scene);

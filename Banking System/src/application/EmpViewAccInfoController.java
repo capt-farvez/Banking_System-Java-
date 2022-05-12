@@ -1,8 +1,12 @@
 package application;
 
+import banking.BankAccount;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -24,6 +28,21 @@ public class EmpViewAccInfoController {
 	
 	public void exit(ActionEvent e) {
 		System.exit(0);
+	}
+	@FXML
+	public TextField accNum;
+	@FXML
+	public Label details;
+	public void accInfo(ActionEvent e) {
+		String num=accNum.getText();
+		try {
+			BankAccount acc=Main.bank.findAccount(num);
+			details.setText(acc.toString());	
+			Main.bank.saveData();
+			}
+		catch(Exception exp) {
+				exp.printStackTrace();
+			}
 	}
 
 }

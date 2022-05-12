@@ -7,8 +7,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
    <children>
-    <Button layoutX="135.0" layoutY="213.0" mnemonicParsing="false" onAction="#empHomeController" text="BANK EMPLOYEE" />
-     <Button layoutX="312.0" layoutY="213.0" mnemonicParsing="false" onAction="#userHomeController" text="ACCOUNT HOLDER" />
+      <Button layoutX="135.0" layoutY="213.0" mnemonicParsing="false" onAction="#empHomeController" text="BANK EMPLOYEE" />
+      <Button layoutX="312.0" layoutY="213.0" mnemonicParsing="false" onAction="#userHomeController" text="ACCOUNT HOLDER" />
       <Label layoutX="188.0" layoutY="63.0" text="WELCOME TO" textFill="#726060">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="29.0" />

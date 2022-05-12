@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserViewAccTransController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmpViewAccTransController">
    <children>
-      <Button layoutX="23.0" layoutY="361.0" mnemonicParsing="false" onAction="#UserHomePage" text="Home" />
+      <Button layoutX="23.0" layoutY="361.0" mnemonicParsing="false" onAction="#empHomePage" text="Home" />
       <Button layoutX="521.0" layoutY="361.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
       <Label layoutX="71.0" layoutY="113.0" text="Transaction History">
          <font>

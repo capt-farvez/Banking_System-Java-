@@ -8,12 +8,13 @@
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="You are logged as Employee" />
       <Button layoutX="106.0" layoutY="126.0" mnemonicParsing="false" onAction="#createAcc" text="Create New Account" />
-      <Button layoutX="106.0" layoutY="176.0" mnemonicParsing="false" onAction="#deposit" prefHeight="25.0" prefWidth="125.0" text="Deposit / Withdraw" />
+      <Button layoutX="106.0" layoutY="176.0" mnemonicParsing="false" onAction="#depositWithdraw" prefHeight="25.0" prefWidth="125.0" text="Deposit / Withdraw" />
       <Button layoutX="106.0" layoutY="225.0" mnemonicParsing="false" onAction="#transfer" prefHeight="25.0" prefWidth="125.0" text="Transfer Money" />
-      <Button layoutX="314.0" layoutY="126.0" mnemonicParsing="false" onAction="#view" prefHeight="25.0" prefWidth="171.0" text="View Account Information" />
-      <Button layoutX="314.0" layoutY="176.0" mnemonicParsing="false" onAction="#view" text="View Transaction Information" />
-      <Button layoutX="314.0" layoutY="225.0" mnemonicParsing="false" onAction="#view" prefHeight="25.0" prefWidth="171.0" text="View All Account" />
+      <Button layoutX="314.0" layoutY="126.0" mnemonicParsing="false" onAction="#viewAccountInfo" prefHeight="25.0" prefWidth="171.0" text="View Account Information" />
+      <Button layoutX="314.0" layoutY="176.0" mnemonicParsing="false" onAction="#viewTransaction" text="View Transaction Information" />
+      <Button layoutX="204.0" layoutY="276.0" mnemonicParsing="false" onAction="#viewBankAllAccount" prefHeight="25.0" prefWidth="171.0" text="View Bank All Account" />
       <Button layoutX="48.0" layoutY="347.0" mnemonicParsing="false" onAction="#backToLoginPage" text="Login Page" />
       <Button layoutX="496.0" layoutY="347.0" mnemonicParsing="false" onAction="#exit" text="Exit " />
+      <Button layoutX="314.0" layoutY="225.0" mnemonicParsing="false" onAction="#viewUserAllBankAccount" prefHeight="25.0" prefWidth="171.0" text="View User All Accounts" />
    </children>
 </AnchorPane>

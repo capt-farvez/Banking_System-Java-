@@ -20,9 +20,9 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="86.0" layoutY="241.0" prefHeight="17.0" prefWidth="491.0" />
-      <Button layoutX="236.0" layoutY="175.0" mnemonicParsing="false" text="Confirm" />
+      <Label fx:id="details" layoutX="86.0" layoutY="241.0" prefHeight="17.0" prefWidth="491.0" />
+      <Button layoutX="236.0" layoutY="175.0" mnemonicParsing="false" onAction="#accInfo" text="Confirm" />
       <Label layoutX="83.0" layoutY="122.0" text="Account Number" />
-      <TextField layoutX="188.0" layoutY="118.0" />
+      <TextField fx:id="accNum" layoutX="188.0" layoutY="118.0" />
    </children>
 </AnchorPane>
