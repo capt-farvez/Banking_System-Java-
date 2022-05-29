@@ -79,7 +79,7 @@ public class EmpDepositWithdrawController {
 		try {
 			status.setText(Double.toString(Main.bank.getBalance(accnum)));
 		} catch (InvalidAccountException e) {
-			e.printStackTrace();
+			status.setText(e.getMessage());
 		}
 		try {
 			Main.bank.saveData();
