@@ -15,6 +15,6 @@
             <Font name="Berlin Sans FB Demi Bold" size="18.0" />
          </font>
       </Label>
-      <ListView fx:id="info" layoutX="32.0" layoutY="100.0" prefHeight="200.0" prefWidth="520.0" />
+      <ListView fx:id="myList" layoutX="32.0" layoutY="100.0" prefHeight="200.0" prefWidth="520.0" />
    </children>
 </AnchorPane>
