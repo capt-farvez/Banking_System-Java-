@@ -17,8 +17,12 @@
          </font>
       </Label>
       <ListView fx:id="lv" layoutX="72.0" layoutY="142.0" prefHeight="200.0" prefWidth="480.0" />
-      <Label layoutX="80.0" layoutY="41.0" text="Account Number" />
-      <TextField fx:id="accountNumTf" layoutX="192.0" layoutY="39.0" />
-      <Button layoutX="241.0" layoutY="72.0" mnemonicParsing="false" onAction="#transactionHistroy" text="Confirm" />
+      <Label layoutX="26.0" layoutY="43.0" text="Account Number" />
+      <TextField fx:id="accountNumTf" layoutX="128.0" layoutY="39.0" />
+      <Button layoutX="271.0" layoutY="82.0" mnemonicParsing="false" onAction="#transactionHistroy" text="Confirm" />
+      <TextField fx:id="nidTf" layoutX="336.0" layoutY="39.0" />
+      <Label layoutX="312.0" layoutY="43.0" text="ID" />
+      <Label text="Label" />
+      <Label fx:id="status" layoutX="263.0" layoutY="115.0" prefHeight="17.0" prefWidth="299.0" />
    </children>
 </AnchorPane>
