@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -32,20 +33,25 @@ public class EmpViewAccTransController {
 		System.exit(0);
 	}
 	@FXML
-	TextField accountNumTf;
+	public TextField accountNumTf;
+	@FXML
+	public TextField nidTf;
 	@FXML
 	ListView<String> lv;
+	@FXML
+	Label status;
 	public void transactionHistroy() {
 		String accountNum=accountNumTf.getText();
-		//String nid=nidTf.getText();
+		String nid=nidTf.getText();
 		ObservableList<Transaction> list;
 		try {
-			list = FXCollections.observableArrayList(Main.bank.getAccTransactions( accountNum));
+			Main.bank.getAccTransactions(nid, accountNum);
+			
+			list = FXCollections.observableArrayList(Main.bank.getAccTransactions(nid, accountNum));
 			for(Transaction t: list)
 				lv.getItems().add(t.toString());
 		} catch (InvalidAccountException e) {
-		
-			e.printStackTrace();
+			status.setText(e.getMessage());
 		}
 		
 	}
