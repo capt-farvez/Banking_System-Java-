@@ -1,6 +1,7 @@
 package application;
 
 import banking.BankAccount;
+import banking.InvalidAccountException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -38,10 +39,10 @@ public class EmpViewAccInfoController {
 		try {
 			BankAccount acc=Main.bank.findAccount(num);
 			details.setText(acc.toString());	
-			Main.bank.saveData();
+			//Main.bank.saveData();
 			}
-		catch(Exception exp) {
-				exp.printStackTrace();
+		catch(InvalidAccountException exp) {
+				details.setText(exp.getMessage());
 			}
 	}
 
