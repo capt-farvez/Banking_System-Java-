@@ -49,11 +49,11 @@ public class EmpTransferController {
 		try {
 			Main.bank.transfer(sender,receiver, balance);
 		} catch (InvalidAccountException e) {
-			e.printStackTrace();
+			status.setText(e.getMessage());
 		} catch (InSufficientBalanceException e) {
-			e.printStackTrace();
+			status.setText("Not Enough Money.");
 		} catch (MaxWithdawException e) {
-			e.printStackTrace();
+			status.setText("Can't transfer due to crossing maximum balance.");
 		}
 		try {
 			Main.bank.saveData();
