@@ -69,6 +69,8 @@ public class EmpDepositWithdrawController {
 		double amount=Double.parseDouble(amountTf.getText());
 		try {
 			Main.bank.withdraw(accnum, amount);
+			status.setText(Double.toString(Main.bank.getBalance(accnum)));
+			Main.bank.saveData();
 		} catch (InvalidAccountException e) {
 			status.setText(e.getMessage());
 		} catch (InSufficientBalanceException e) {
@@ -76,19 +78,22 @@ public class EmpDepositWithdrawController {
 		} catch (MaxWithdawException e) {
 			status.setText(e.getMessage());
 		}
-		try {
-			status.setText(Double.toString(Main.bank.getBalance(accnum)));
-		} catch (InvalidAccountException e) {
+		catch (Exception e) {
 			status.setText(e.getMessage());
 		}
-		try {
-			Main.bank.saveData();
-		} catch (FileNotFoundException e) {
-		
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			status.setText(Double.toString(Main.bank.getBalance(accnum)));
+//		} catch (InvalidAccountException e) {
+//			status.setText(e.getMessage());
+//		}
+//		try {
+//			Main.bank.saveData();
+//		} catch (FileNotFoundException e) {
+//		
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 		
 	}
 
