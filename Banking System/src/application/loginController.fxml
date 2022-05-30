@@ -14,7 +14,7 @@
             <Font name="Berlin Sans FB Demi Bold" size="29.0" />
          </font>
       </Label>
-      <Label layoutX="212.0" layoutY="104.0" text="ABCD BANK" textFill="#802c2c">
+      <Label layoutX="212.0" layoutY="104.0" text="ASIAN BANK" textFill="#802c2c">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="24.0" />
          </font>
@@ -24,11 +24,11 @@
             <Font name="Berlin Sans FB" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="85.0" layoutY="361.0" text="Developed By : Anowar Farvez, Shakib, Sifat, Jubayer, Shuaib, Alifia , Adity . ">
+      <Label layoutX="43.0" layoutY="362.0" text="Developed By : Anowar Hossen Farvez. Student of Department of CSE at University of Asia Pacific." textFill="#123472">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Agency FB Bold" size="15.0" />
          </font>
       </Label>
-      <Button layoutX="254.0" layoutY="319.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <Button layoutX="264.0" layoutY="288.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
    </children>
 </AnchorPane>
